@@ -1,0 +1,354 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Clear TVs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Crystal Clear TVs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Upgrade Your Viewing Experience</h1>
+            <p class="lead mb-4">Discover the latest 4K and OLED displays at unbeatable prices.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>We are dedicated to bringing the cinema experience directly to your living room. With top-tier brands, stunning resolutions, and smart technology, we help you find the perfect screen for gaming, movies, and sports.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Living Room TV" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="bg-light-gray">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Top Picks</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="OLED TV">
+                        <div class="card-body">
+                            <h5 class="card-title">VisionPro 55" OLED</h5>
+                            <p class="card-text">Experience infinite contrast and perfect blacks.</p>
+                            <h6 class="text-primary">$1,199.00</h6>
+                            <button class="btn btn-outline-dark mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1552831388-6a0b35077328?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="4K QLED TV">
+                        <div class="card-body">
+                            <h5 class="card-title">Lumina 65" 4K QLED</h5>
+                            <p class="card-text">Vibrant colors and a high refresh rate for smooth gaming.</p>
+                            <h6 class="text-primary">$899.00</h6>
+                            <button class="btn btn-outline-dark mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1601944177325-f8867652837f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Smart TV">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoSmart 43" HD</h5>
+                            <p class="card-text">Perfect for bedrooms with built-in streaming apps.</p>
+                            <h6 class="text-primary">$349.00</h6>
+                            <button class="btn btn-outline-dark mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center mb-4">Leave Your Feedback</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Rating</label>
+                        <select class="form-select" id="rating">
+                            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                            <option value="4">⭐⭐⭐⭐ Good</option>
+                            <option value="3">⭐⭐⭐ Average</option>
+                            <option value="2">⭐⭐ Poor</option>
+                            <option value="1">⭐ Terrible</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" rows="3" placeholder="Tell us about your experience..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>📍 Address</h5>
+                    <p>Bishan, Singapore</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>📞 Phone</h5>
+                    <p>+65 8807 4032</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>✉️ Email</h5>
+                    <p>support@crystalcleartvs.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Clear TVs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Crystal Clear TVs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center d-flex align-items-center" style="min-height: 100vh;">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="display-3 fw-bold">Upgrade Your Viewing Experience</h1>
+            <p class="lead mb-4">Discover the latest 4K and OLED displays at unbeatable prices.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+                <h2>About Us</h2>
+                <p>We are dedicated to bringing the cinema experience directly to your living room. With top-tier brands, stunning resolutions, and smart technology, we help you find the perfect screen for gaming, movies, and sports.</p>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Living Room TV" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="bg-light-gray">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Our Top Picks</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="OLED TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">VisionPro 55" OLED</h5>
+                            <p class="card-text text-muted">Experience infinite contrast and perfect blacks.</p>
+                            <h5 class="text-primary fw-bold">$1,199.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="4K QLED TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lumina 65" 4K QLED</h5>
+                            <p class="card-text text-muted">Vibrant colors and high refresh rate.</p>
+                            <h5 class="text-primary fw-bold">$899.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1601944177325-f8867652837f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Smart TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">EcoSmart 43" HD</h5>
+                            <p class="card-text text-muted">Perfect for bedrooms with built-in streaming.</p>
+                            <h5 class="text-primary fw-bold">$349.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="8K TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Titan 75" 8K Mini-LED</h5>
+                            <p class="card-text text-muted">The ultimate home theater centerpiece.</p>
+                            <h5 class="text-primary fw-bold">$2,499.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1540224871915-bc8ffb782bdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Curved TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CurveX 55" 4K</h5>
+                            <p class="card-text text-muted">Immersive curved design for wider viewing.</p>
+                            <h5 class="text-primary fw-bold">$699.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 product-card shadow-sm border-0">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Gaming TV">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">GamerPro 48" 144Hz</h5>
+                            <p class="card-text text-muted">Low latency and high frame rates for RTS & FPS gaming.</p>
+                            <h5 class="text-primary fw-bold">$1,099.00</h5>
+                            <button class="btn btn-dark w-100 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="800">
+            <div class="col-md-8">
+                <h2 class="text-center mb-4">Leave Your Feedback</h2>
+                <div class="card shadow-sm border-0 p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating</label>
+                            <select class="form-select" id="rating">
+                                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                                <option value="4">⭐⭐⭐⭐ Good</option>
+                                <option value="3">⭐⭐⭐ Average</option>
+                                <option value="2">⭐⭐ Poor</option>
+                                <option value="1">⭐ Terrible</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Comments</label>
+                            <textarea class="form-control" id="comments" rows="4" placeholder="Tell us about your experience..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-5" data-aos="fade-up">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-3 border border-secondary rounded">
+                        <h5 class="text-primary">📍 Address</h5>
+                        <p class="mb-0">123 Tech Avenue, Bishan, Singapore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-3 border border-secondary rounded">
+                        <h5 class="text-primary">📞 Phone</h5>
+                        <p class="mb-0">+65 8000 1234</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-3 border border-secondary rounded">
+                        <h5 class="text-primary">✉️ Email</h5>
+                        <p class="mb-0">support@crystalcleartvs.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            once: true, // Whether animation should happen only once - while scrolling down
+            offset: 100 // Offset (in px) from the original trigger point
+        });
+    </script>
+</body>
+</html>
