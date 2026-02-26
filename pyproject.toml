@@ -1,0 +1,12 @@
+[project]
+name = "shwe_vision_tv_house"
+version = "1.1"
+description = "TV Sale Project"
+authors = [
+    {name = "Minn Thet Ko Ko"}
+]
+license = {file = "LICENSE"}
+
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
