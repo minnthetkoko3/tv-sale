@@ -10,7 +10,8 @@ if __name__ == '__main__':
     # Running on port 5000 with debug mode on for easy development
     app.run(debug=True, port=5000)
 
-# // this is testing for only auto email submit 
+# // this is testing for only auto email submit staill error
+
 
 # from flask import Flask, render_template, request, redirect, url_for
 # import smtplib

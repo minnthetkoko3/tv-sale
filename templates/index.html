@@ -61,20 +61,10 @@
 
     <!-- Products Section -->
 
-    <section id="products" class="bg-light-gray">
-    <div class="container">
-        <h2 class="text-center mb-4" data-aos="fade-up">Full Products List</h2>
-        
-        <div class="text-center mb-5" data-aos="fade-up">
-            <a href="{{ url_for('static', filename='../static/files/Ultimate_Analysis_FIXED.xlsx') }}" class="btn btn-success" target="_blank">
-                📊 Download Full Product List (Excel)
-            </a>
-        </div>
-
-    <section id="products" class="bg-light-gray">
+    <section id="products" class="bg-light-gray pb-5">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">Our Top Picks</h2>
-            <div class="row g-4">
+            <div class="row g-4 mb-5">
                 
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 product-card shadow-sm border-0">
@@ -161,47 +151,61 @@
                 </div>
 
             </div>
+
+
+    <!-- Downloadable Product List Section -->
+            
+            <div class="mt-5 pt-4 text-center border-top">
+                <h3 class="mb-4" data-aos="fade-up">Full Products List</h3>
+                <div data-aos="fade-up">
+                    <a href="{{ url_for('static', filename='../static/files/Ultimate_Analysis_FIXED.xlsx') }}" class="btn btn-success" target="_blank">
+                        📊 Download Full Product List (Excel)
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    
+
     <!-- Feedback Section -->
 
-    <section id="feedback" class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="800">
-            <div class="col-md-8">
-                <h2 class="text-center mb-4">Leave Your Feedback</h2>
-                <div class="card shadow-sm border-0 p-4">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="John Doe">
-                        </div>
-                        <div class="mb-3">
-                            <label for="rating" class="form-label">Rating</label>
-                            <select class="form-select" id="rating">
-                                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                                <option value="4">⭐⭐⭐⭐ Good</option>
-                                <option value="3">⭐⭐⭐ Average</option>
-                                <option value="2">⭐⭐ Poor</option>
-                                <option value="1">⭐ Terrible</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="comments" class="form-label">Comments</label>
-                            <textarea class="form-control" id="comments" rows="4" placeholder="Tell us about your experience..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
-                    </form>
+    <section id="feedback" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="800">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Leave Your Feedback</h2>
+                    <div class="card shadow-sm border-0 p-4">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="rating" class="form-label">Rating</label>
+                                <select class="form-select" id="rating">
+                                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                                    <option value="4">⭐⭐⭐⭐ Good</option>
+                                    <option value="3">⭐⭐⭐ Average</option>
+                                    <option value="2">⭐⭐ Poor</option>
+                                    <option value="1">⭐ Terrible</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Comments</label>
+                                <textarea class="form-control" id="comments" rows="4" placeholder="Tell us about your experience..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Footer Section -->
 
-    <section id="contact" class="bg-dark text-white">
+    <section id="contact" class="bg-dark text-white pt-5 pb-5">
         <div class="container text-center">
             <h2 class="mb-5" data-aos="fade-up">Contact Us</h2>
             <div class="row">
